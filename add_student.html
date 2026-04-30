@@ -1,0 +1,8 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>{% extends "base.html" %}
+{% block content %}
+<h2>Ajouter un étudiant</h2>
+<form method="POST">
+    <input type="text" name="name" placeholder="Nom de l'élève" required>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>
+{% endblock %}

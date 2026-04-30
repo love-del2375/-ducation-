@@ -1,0 +1,8 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>{% extends "base.html" %}
+{% block content %}
+<h2>Statistiques détaillées</h2>
+<div>{{ graph_matiere|safe }}</div>
+<div>{{ graph_trimestre|safe }}</div>
+<div>{{ graph_top5|safe }}</div>
+<a href="/export_pdf" class="btn btn-secondary">Exporter en PDF</a>
+{% endblock %}

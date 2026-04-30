@@ -1,0 +1,15 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>{% extends "base.html" %}
+{% block content %}
+<h2>Historique des notes</h2>
+<table class="table table-striped">
+    <tr><th>Nom</th><th>Matière</th><th>Note</th><th>Date</th></tr>
+    {% for note in notes %}
+    <tr>
+        <td>{{ note.student.name }}</td>
+        <td>{{ note.subject }}</td>
+        <td>{{ note.note }}</td>
+        <td>{{ note.date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
